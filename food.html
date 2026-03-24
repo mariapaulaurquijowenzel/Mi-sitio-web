@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dionysie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="copyright" content="Dionysie">
+<meta name="author" content="Paulette">
+<meta name="description" content="Blog de Vinos">
+<meta name="keywords" content="Vinos, Blanco, Tinto, Espumoso, Francia">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+/* Fuente general */
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif;}
+body {margin:0; background:white;}
+
+/* Sidebar padding */
+.w3-bar-block .w3-bar-item {padding:20px;}
+
+/* -----------------------------
+   Sección Vinos
+-------------------------------*/
+.w3-quarter img {
+  width: 100%;
+  height: 180px;       /* altura uniforme para que título y texto se vean */
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+/* -----------------------------
+   Integrantes
+-------------------------------*/
+.w3-card-4 img {
+  width:100%;
+  height:300px;       /* altura uniforme */
+  object-fit:cover;
+  border-radius:6px 6px 0 0;
+}
+.w3-card-4 {
+  height:500px;       /* altura total uniforme */
+}
+.w3-card-4:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+/* -----------------------------
+   Shopping
+-------------------------------*/
+.shop-card {
+  height:450px;       /* altura uniforme de la tarjeta */
+}
+.shop-card img {
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:6px 6px 0 0;
+}
+.shop-card:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+/* -----------------------------
+   Botones
+-------------------------------*/
+.w3-button {
+  cursor:pointer;
+}
+.w3-button:hover {
+  background-color:#555 !important;
+  color:white !important;
+}
+
+/* -----------------------------
+   Textos y márgenes generales
+-------------------------------*/
+.w3-container h3 {margin-bottom:10px;}
+.w3-container p {margin-bottom:10px;}
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" 
+style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Cerrar menú</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Vinos</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Sobre Nosotros</a>
+  <a href="#shop" onclick="w3_close()" class="w3-bar-item w3-button">Shopping</a>
+</nav>
+
+<!-- Top Menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">
+      <a href="#shop"><i class="fa fa-shopping-cart"></i></a>
+    </div>
+    <div class="w3-center w3-padding-16">Dionysie</div>
+  </div>
+</div>
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- Sección Vinos -->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="IMG/foto1.jpg" alt="TINTO">
+      <h3>Vino tinto</h3>
+      <p>Hecho con uvas tintas fermentadas con sus pieles.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="IMG/foto2.jpg" alt="BLANCO">
+      <h3>Vino blanco</h3>
+      <p>Se elabora con uvas blancas o tintas sin piel.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="IMG/foto3.jpg" alt="ROSADO">
+      <h3>Vino rosado</h3>
+      <p>Producido con uvas tintas, pero con poca maceración.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="IMG/foto4.jpg" alt="ESPUMOSO">
+      <h3>Vino espumoso</h3>
+      <p>Contiene burbujas naturales por una segunda fermentación.</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="IMG/foto5.jpg" alt="DULCE">
+      <h3>Vino dulce</h3>
+      <p>Contiene más azúcar residual, lo que lo hace más goloso.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="IMG/foto6.jpg" alt="FORTIFICADO">
+      <h3>Vino fortificado</h3>
+      <p>Tiene alcohol añadido, lo que eleva su graduación.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="IMG/foto7.jpg" alt="POSTRE">
+      <h3>Vino de postre</h3>
+      <p>Especialmente dulce, servido al final de las comidas.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="IMG/foto8.jpg" alt="NATURAL">
+      <h3>Vino natural</h3>
+      <p>Producido sin químicos, pesticidas o intervención tecnológica.</p>
+    </div>
+  </div>
+
+  <hr id="about">
+
+  <!-- Sobre Nosotros / Integrantes -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Conoce a Nuestro Equipo</h3>
+    <p>Somos un equipo de apasionados por el vino, unidos por el deseo de compartir experiencias y el arte detrás de cada copa.</p>
+    <br>
+
+    <div class="w3-row-padding w3-center">
+      <div class="w3-quarter">
+        <div class="w3-card-4 w3-white w3-hover-shadow">
+          <img src="IMG/pauchis.jpg" alt="Paulette">
+          <div class="w3-container">
+            <h4><b>Paulette</b></h4>
+            <h6><i>Catadora profesional</i></h6>
+            <p>Fundadora de Dionysie. Su pasión por los aromas y sabores del vino la ha llevado a recorrer las mejores bodegas. Ama descubrir nuevas cosechas y compartirlo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card-4 w3-white w3-hover-shadow">
+          <img src="IMG/carlos.jpg" alt="Carlos Sainz">
+          <div class="w3-container">
+            <h4><b>Carlos Sainz</b></h4>
+            <h6><i>Sommelier certificado</i></h6>
+            <p>Especialista en maridajes y cultura vinícola. Cree que cada vino tiene una historia y disfruta compartirla, celebrando la conexión humana dentro de cada copa.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card-4 w3-white w3-hover-shadow">
+          <img src="IMG/lady.jpg" alt="Diana">
+          <div class="w3-container">
+            <h4><b>Diana De Gales</b></h4>
+            <h6><i>Comunicadora gastronómica</i></h6>
+            <p>Se dedica a contar historias detrás de cada vino y viñedo. Diana combina la narrativa con la pasión por el vino, creando experiencias sensoriales.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card-4 w3-white w3-hover-shadow">
+          <img src="IMG/rodrigo.jpg" alt="Rodrigo">
+          <div class="w3-container">
+            <h4><b>Rodrigo Herrera</b></h4>
+            <h6><i>Enólogo en formación</i></h6>
+            <p>Enfocado en innovación y sostenibilidad. Rodrigo cree que cada vino refleja el trabajo de quienes lo crean, combinando ciencia y arte en su estudio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr id="shop">
+
+  <!-- Shopping -->
+  <div class="w3-container w3-padding-32 w3-center">
+    <h3><i class="fa fa-shopping-cart"></i> Boutique Dionysie</h3>
+    <p>Compra nuestros vinos directamente desde Dionysie.</p>
+    
+    <div class="w3-row-padding w3-center">
+      <div class="w3-quarter shop-card">
+        <img src="IMG/vino1.jpg" alt="Rouge Passion">
+        <h4>Rouge Passion</h4>
+        <p>Vino tinto intenso con notas de frutos rojos y un toque de roble.</p>
+        <p><b>Precio:</b> $3,500 MXN</p>
+        <button class="w3-button w3-black w3-margin-bottom">Agregar al carrito</button>
+      </div>
+      <div class="w3-quarter shop-card">
+        <img src="IMG/vino2.jpg" alt="Blanc de Lune">
+        <h4>Blanc de Lune</h4>
+        <p>Vino blanco fresco, aromas de pera y flores blancas.</p>
+        <p><b>Precio:</b> $2,500 MXN</p>
+        <button class="w3-button w3-black w3-margin-bottom">Agregar al carrito</button>
+      </div>
+      <div class="w3-quarter shop-card">
+        <img src="IMG/vino3.jpg" alt="Rosé Amour">
+        <h4>Rosé Amour</h4>
+        <p>Rosado delicado con sabor afrutado y encanto francés.</p>
+        <p><b>Precio:</b> $4,500 MXN</p>
+        <button class="w3-button w3-black w3-margin-bottom">Agregar al carrito</button>
+      </div>
+      <div class="w3-quarter shop-card">
+        <img src="IMG/vino4.jpg" alt="Étoile Dorée">
+        <h4>Étoile Dorée</h4>
+        <p>Espumoso brillante con burbujas finas y aroma floral.</p>
+        <p><b>Precio:</b> $1,500 MXN</p>
+        <button class="w3-button w3-black w3-margin-bottom">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-padding-top">
+      <div class="w3-quarter shop-card">
+        <img src="IMG/vino5.jpg" alt="Château Fort">
+        <h4>Château Fort</h4>
+        <p>Vino fortificado, elegante y con un ligero dulzor alcohólico.</p>
+        <p><b>Precio:</b> $2,000 MXN</p>
+        <button class="w3-button w3-black w3-margin-bottom">Agregar al carrito</button>
+      </div>
+      <div class="w3-quarter shop-card">
+        <img src="IMG/vino6.jpg" alt="Doux Délice">
+        <h4>Doux Délice</h4>
+        <p>Vino de postre, dulce y aterciopelado, ideal para finales de comida.</p>
+        <p><b>Precio:</b> $1,000 MXN</p>
+        <button class="w3-button w3-black w3-margin-bottom">Agregar al carrito</button>
+      </div>
+      <div class="w3-quarter shop-card">
+        <img src="IMG/vino7.jpg" alt="Naturel Élégant">
+        <h4>Naturel Élégant</h4>
+        <p>Vino natural, sin químicos, resaltando la pureza de la uva.</p>
+        <p><b>Precio:</b> $3,000 MXN</p>
+        <button class="w3-button w3-black w3-margin-bottom">Agregar al carrito</button>
+      </div>
+      <div class="w3-quarter shop-card">
+        <img src="IMG/vino8.jpg" alt="Cuvée Royale">
+        <h4>Cuvée Royale</h4>
+        <p>Vino espumoso premium, con burbujas finas y notas de frutas blancas.</p>
+        <p><b>Precio:</b> $4,000 MXN</p>
+  <button class="w3-button w3-black w3-margin-bottom">Agregar al carrito</button>
+</div>
+      <div class="w3-quarter"></div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32 w3-center">
+    <div class="w3-third">
+      <h3>DIONYSIE</h3>
+      <p>Blog de vino, arte y placer. Explora el mundo del vino desde su esencia hasta la copa.</p>
+      <p>Derechos reservados © <a href="https://www.linkedin.com/in/mar%C3%ADa-paula-urquijo-wenzel-245449315/" target="_blank">Paulette</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <p>Explora nuestras últimas entradas sobre vinos, catas y maridajes.</p>
+    </div>
+
+    <div class="w3-third">
+      <h3>CONTACTO</h3>
+      <p>Email: contacto@dionysie.com</p>
+      <p>Tel: +52 55 1234 5678</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+// Funciones para abrir y cerrar sidebar
+function w3_open() { document.getElementById("mySidebar").style.display = "block"; }
+function w3_close() { document.getElementById("mySidebar").style.display = "none"; }
+
+// Scroll suave para enlaces de menú
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
+    w3_close();
+  });
+});
+</script>
+
+</body>
+</html>
